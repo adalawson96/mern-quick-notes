@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import NewNotePage from '../NewNotePage/NewNotePage';
+import NotesPage from '../NotesPage/NotesPage';
 import NavBar from '../../components/NavBar/NavBar';
 import { getUser } from '../../utilities/users-service.js'; 
 import LoginForm from '../../components/LoginForm/LoginForm';
@@ -18,8 +18,8 @@ export default function App() {
             <NavBar user={ user } setUser={ setUser } />
             <Routes>
               {/* Route components in here */}
-              <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage />} />
+              <Route path="/notes/new" element={<NewNotePage />} />
+              <Route path="/notes" element={<NotesPage />} />
               <Route path="/login" element={< LoginForm/>} />
             </Routes>
           </>

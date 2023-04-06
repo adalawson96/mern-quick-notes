@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
     return (
         <nav>
-            <Link to="/orders">Order History</Link>
+            <Link to="/notes">All Notes</Link>
             &nbsp; | &nbsp;
-            <Link to="/orders/new"> New Order</Link>
+            <Link to="/notes/new"> New Note</Link>
+            &nbsp; &nbsp;
         </nav>
     );
 }
