@@ -1,5 +1,3 @@
-// users-api.js
-
 // Add the following import
 import sendRequest from './send-request';
 const BASE_URL = '/api/users';

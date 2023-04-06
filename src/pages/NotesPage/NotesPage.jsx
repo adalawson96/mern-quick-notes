@@ -9,10 +9,11 @@ export default function NotesPage() {
 
   return (
     <>
-      <h1>NotesPage</h1>
-      <button onClick={ handleCheckToken }>Check when my login expires</button>
+      <h1>Notes Page</h1>
+      <button onClick={ handleCheckToken } >Check When My Login Expires</button>
 
       <h3>No Notes Yet!</h3>
     </>
+    
   );
 }
